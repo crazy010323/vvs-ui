@@ -8,13 +8,17 @@ Imported https://github.com/pancakeswap/pancake-frontend
 
 Imported https://github.com/pancakeswap/pancake-swap-sdk
 
+Imported https://github.com/pancakeswap/pancake-info-api
+
 ## Packages
 
 - `vvs-uikit` : React components used to build the VVS UI
 - `vvs-eslint-config` : An ESLint config for VVS, with Typescript and Prettier support
 - `vvs-frontend` : Main VVS web app
 - `vvs-info-api` : express nodejs API implementation for VVS on-chain data query
+- `vvs-prelaunch` : prelaunch landing page with count down clock
 - `vvs-profile-sdk` : Handy functions to retrieve data for VVS Profile system
+- `vvs-swap-sdk`: Handy functions to retrieve data for VVS contracts
 - `token-lists` : Main VVS token list and tools to validate it
 
 ## How to use
@@ -91,12 +95,12 @@ lerna run format:check
 
 ## Troubleshooting
 
-### Add child package to existing monorepo
+### Add child package to existing monorepo with git history
 
 ```
-lerna import ~/dev/tmp/pancake-frontend --flatten
-lerna import ~/dev/tmp/pancake-swap-sdk --flatten
-lerna import ~/dev/tmp/pancake-info-api --flatten
+lerna import ~/pancake-frontend --flatten
+lerna import ~/pancake-swap-sdk --flatten
+lerna import ~/pancake-info-api --flatten
 ```
 
 `--flatten` is important and commit history may lost without it
